@@ -65,6 +65,7 @@ main {
 .main {
     border-bottom: 8px solid #999999;
     border-top: 1px solid #fff;
+    max-width: 810px;
 }
 
 .main div h2 {
@@ -90,4 +91,89 @@ span {
     margin-top: 10px;
     width: 36ch;
     margin-bottom: 35px;
+}
+
+.section-text1, .section-text2 {
+    font-weight: 500;
+    width: 35ch;
+    line-height: 25px;
+}
+
+.section-text2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+} 
+
+@media (min-width: 768px){
+    .section-header{
+        width: 390px;
+    }
+
+    .section-text1, .section-text2 {
+        width: 50ch;
+    }
+
+    main {
+        padding: 3.5rem 0;
+    }
+
+    h1 + p, 
+    .bttr-txt,
+    .section-text1, 
+    .section-text2 {
+        font-size: 1.2rem ;
+    }
+}
+
+@media (min-width: 1024px){
+    .section-header{
+        width: 450px;
+        margin-left: -2.5rem;
+    }
+
+    .section-text1, .section-text2 {
+        width: 60ch;
+    }
+
+    main {
+        padding: 4rem 0;
+    }
+
+    .header {
+        margin-left: 12.2rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .section-header{
+        width: 500px;
+        margin-left: -3rem;
+    }
+
+    .section-text1, .section-text2 {
+        width: 65ch;
+    }
+
+    main {
+        padding: 4.5rem 0;
+    }
+
+    .header {
+        margin-left: 14.2rem;
+    }
+}
+
+@media (min-width: 1440px){
+
+    .section-text1, .section-text2 {
+        width: 65ch;
+    }
+
+    main {
+        padding: 5rem 0;
+    }
+
+    .header {
+        margin-left: 20.2rem;
+    }
 }
